@@ -1,3 +1,3 @@
 # MatrixLib
 
-Educational implementation of a matrix class, including most of it's possible calculations.
+Educational implementation of a matrix class, including a few of it's possible operations.
