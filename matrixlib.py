@@ -40,9 +40,9 @@ class Matrix:
 	# array - oznacza tabele rozmarów N x M która jest wnętrznością macierzy.
 	# values - rozpakowana lista wartości tabeli 'array'.
 	#
-	# obiekt tworzy się w następujący sposób: a = Matrix( [i,j, ..],
-	#													  [k,l, ..],
-	#													  [  ...  ] )
+	# obiekt tworzy się w następujący sposób: a = Matrix(	[i,j, ..],
+	#							[k,l, ..],
+	#							[  ...  ] )
 	#
 	# Klasy w pythonie nie muszą mieć wcześniej zadeklarowanych zmiennych/funkcji.
 	# Istnieją więc rózne szkoły formatowania kodu klas, tutaj przyjmuje schemat: 
@@ -73,7 +73,7 @@ class Matrix:
 	# W tym przypadku '*array' mówi o nieokreślonej ilości nienazwanych parametrów, według założenia wyżej każdy rząd wartości jest jednym parametrem. 
 	# przykładowo dla stworzonego obiektu Matrix( [1,2], [3,4] ) przy notacji __init__(self, *array), array odczytuje się jako:
 	# array => ([1,2], [3,4], )   (typ: tuple)
-	# *array => [1,2], [3,4]		 (typ: brak, zwraca całą zawartość jako kolejne argumenty)
+	# *array => [1,2], [3,4]	(typ: brak, zwraca całą zawartość jako kolejne argumenty)
 	# dowolną liste można też tak wypakować aby stworzyć nowy obiekt przyjmujący *array (będzie później)
 	def __init__(self, *array):
 		if not isinstance(array, tuple): # isinstance() porównuje typy danych, pomocne do stwierdzenia warunków które powinny powodować błędy typu.
@@ -132,9 +132,9 @@ class Matrix:
 		if self.size[1] != other.size[0]:
 			raise InvalidMatrixOperation(f"Multiplying matrices where number of columns of the first matrix doesn't match the number of rows of the second matrix.", self, other)
 
-		# tworzę tabele kolumn (przykład [a,b,c]  ->  [a,d] ) dla prawej macierzy (other)
-		#								 [d,e,f] 	  [b,e] )
-		#											  [c,f] )
+		# tworzę tabele kolumn (przykład 	[a,b,c]  ->  	[a,d] ) 	dla prawej macierzy (other)
+		#					[d,e,f] 	[b,e] )
+		#							[c,f] )
 		array_of_columns = []
 		for col_idx in range(0, other.size[1]):
 			array_of_columns.append( 
