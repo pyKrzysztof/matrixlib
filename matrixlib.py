@@ -1,10 +1,3 @@
-##########################
-# Umieszczam dodatkowe komentarze dla elementów języka, które z tego co pamiętam różnią się od języka C,
-# ale tylko w pierwszym ich wystąpieniu
-# nie tłumaczę również elementów kodu które nie mają wiele wspólnego z głównym funkcjonowaniem klasy.
-
-
-
 
 ######################################
 # Dodatkowe klasy błędów, które opisują dany błąd i zawierają dodatkowe dane 
