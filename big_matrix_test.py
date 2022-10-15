@@ -16,3 +16,4 @@ A = Matrix( *a )
 
 Matrix.PRECISION = 6
 print(A*A.inverse)
+# prawie natychmiastowe dla wielkości 100x100, dla wielkości 200x200 operacja zajmuje do 10 sekund.
